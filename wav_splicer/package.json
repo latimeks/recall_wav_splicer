@@ -1,0 +1,13 @@
+{
+  "name": "wav_splicer",
+  "version": "1.0.0",
+  "description": "Automated text-file of parsed wav data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transmit": "node index input.txt SCRIPTTEST_200_dat",
+    "transmit-clone": "scp output/user-SCRIPTTEST-wavs.txt SEVERPATH"
+  },
+  "author": "Caleb Latimer",
+  "license": "MIT"
+}
