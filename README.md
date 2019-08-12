@@ -37,3 +37,7 @@ Script will:
 - Review it and be sure it's correct then update `package.json` transmit-clone with the folder path on ssh to scp to, this can be found in the official documentation, also update the filename for the new file you've generated
 - Run `npm run transmit-clone` and authenticate your credentials to move the new file over
 - SSH in and check it with cat or vi in bash, once verified, it's ready for the next steps covered in the documentation of the second script
+
+## Warnings
+- If a wav file already exists in `output/` the script will overwrite whatever is there
+- SCP natively overwrites whatever is remote

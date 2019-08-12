@@ -24,7 +24,7 @@ var fileData = fs.readFileSync(inputFile, 'utf-8').split(/\r?\n/).forEach(functi
   }
 });
 
-fs.appendFileSync(outputFile, outputData, (err) => {
+fs.writeFile(outputFile, outputData, (err) => {
   if(err)
     throw err;
   console.log(`New file: ${outputFile}, containing ${outputCount} total lines`);
